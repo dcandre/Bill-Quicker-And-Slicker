@@ -1,0 +1,21 @@
+﻿{
+    "manifest_version": 2,
+    "name": "Bill Quicker & Slicker",
+    "version": "0.1",
+    "description": "Billquick needs a booster seat",
+    "page_action": {
+          "default_title": "Bill Quicker & Slicker",      
+          "default_popup": "billquickerandslicker.html"        
+    },
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "cookies",
+        "http://billquick.intouchsol.com/*"        
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "background": {
+        "scripts": ["js/eventPage.js"],
+        "persistent": false
+    }
+}
